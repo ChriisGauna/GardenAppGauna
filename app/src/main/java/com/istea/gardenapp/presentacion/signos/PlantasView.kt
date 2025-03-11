@@ -81,7 +81,8 @@ fun ListaDeSignosView(plantas: List<Planta>, onSelect: (Planta)->Unit){
                     .fillMaxWidth(),
                 colors = CardDefaults.cardColors(
                     contentColor = MaterialTheme.colorScheme.secondary,
-                    containerColor = Pink40
+                    containerColor = MaterialTheme.colorScheme.secondaryContainer
+                    //aca le cambie el pink harcodeado por el secondary como en DetalleView
                 ),
                 onClick = {
                     onSelect(planta)
