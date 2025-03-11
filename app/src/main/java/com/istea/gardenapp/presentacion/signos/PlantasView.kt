@@ -104,7 +104,8 @@ fun ListaDeSignosView(plantas: List<Planta>, onSelect: (Planta)->Unit){
                         Text(
                             modifier = Modifier.padding(10.dp),
                             style = MaterialTheme.typography.titleMedium,
-                            text = ""
+                            text = planta.nombre
+                            //aca cambie el las comillas vacias por la prop del nombre
                         )
                         Text(
                             modifier = Modifier.padding(horizontal = 10.dp),
@@ -119,7 +120,8 @@ fun ListaDeSignosView(plantas: List<Planta>, onSelect: (Planta)->Unit){
                         Text(
                             modifier = Modifier.padding(10.dp),
                             style = MaterialTheme.typography.bodyMedium,
-                            text = ""
+                            text = planta.descripcion
+                            //aca tmb cambie el las comillas vacias por la prop del detalle
                         )
                     }
                 }
